@@ -15,10 +15,10 @@ Rails.application.routes.draw do
   
   # UPDATE
   
-  post("/modify_post/:path_id", { :controller => "posts", :action => "update" })
+  #post("/modify_post/:path_id", { :controller => "posts", :action => "update" })
   
   # DELETE
-  get("/delete_post/:path_id", { :controller => "posts", :action => "destroy" })
+  #get("/delete_post/:path_id", { :controller => "posts", :action => "destroy" })
 
   #------------------------------
 
@@ -34,10 +34,10 @@ Rails.application.routes.draw do
   
   # UPDATE
   
-  post("/modify_board/:path_id", { :controller => "boards", :action => "update" })
+  #post("/modify_board/:path_id", { :controller => "boards", :action => "update" })
   
   # DELETE
-  get("/delete_board/:path_id", { :controller => "boards", :action => "destroy" })
+  #get("/delete_board/:path_id", { :controller => "boards", :action => "destroy" })
 
   #------------------------------
 
