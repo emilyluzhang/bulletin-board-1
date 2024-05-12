@@ -10,20 +10,38 @@
 <div>
   <div>
     <h2>
-      Edit board
+      Add a new post
     </h2>
 
-    <form action="/modify_board/<%= @the_board.id %>"  method="post" >
+    <form action="/insert_post"  method="post" >
       <div>
         <label for="name_box">
-          Name
+          Title
         </label>
 
-        <input type="text" id="name_box" name="query_name" value="<%= @the_board.name %>">
+        <input type="text" id="name_box" name="query_title">
       </div>
 
+      <div>
+      <label for="body_box">
+          Body
+        </label>
+
+        <textarea id="body_box" name="query_body"></textarea>
+      </div>
+
+      <div>
+        <label for="expires_on_box">
+          Expires on
+        </label>
+
+        <input type="date" id="expires_on_box" name="query_expires_on">
+      </div>
+
+      <input type="hidden" id="board_id_box" name="query_board_id" value="<%= @the_board.id%>">
+
       <button>
-        Update board
+        Add post
       </button>
     </form>
   </div>
